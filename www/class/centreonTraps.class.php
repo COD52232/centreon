@@ -93,7 +93,7 @@ class CentreonTraps
                 $i = 1;
                 $queryValues = [];
                 foreach ($rules as $key => $value) {
-                    if (is_null($value) || $value == "" || filter_var($key, FILTER_VALIDATE_INT) === false) {
+                    if (is_null($value) || $value == "") {
                         continue;
                     }
                     $value = \HtmlAnalyzer::sanitizeAndRemoveTags($value);
